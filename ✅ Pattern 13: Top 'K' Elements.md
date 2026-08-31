@@ -6,11 +6,11 @@ Any problem that asks us to find the <b>top/smallest/frequent K</b> elements amo
 
 ### ❗ NOTE
 
-Although this course uses <b>Heaps</b> to solve <b>Top 'K' Elements</b> problems, <b>JavaScript</b> does not have a built in method for <b>Heaps/Priority Queues</b>. It can be very time consuming to implement a <b>Heap class</b> from scratch, especially during an interview. After reviewing the <i>JavaScript</i> solutions on <i>Leetcode</i> the most effecient way to solve a <b>Top 'K' Elements</b> problem is usually with <b>[QuickSort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort)</b>, <b>[BinarySearch](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#binary-search)</b>, <b>[BucketSort](https://initjs.org/bucket-sort-in-javascript-dc040b8f0058)</b>, <b>[Greedy Algorithms](https://github.com/Chanda-Abdul/Grokking-Algorithm-Book-Notes/blob/main/8.%20Greedy%20Algoritms.md)</b>, or <b>[HashMaps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)</b>. For more information take a look at these
+Although this course uses <b>Heaps</b> to solve <b>Top 'K' Elements</b> problems, <b>Java / Python / C++</b> does not have a built in method for <b>Heaps/Priority Queues</b>. It can be very time consuming to implement a <b>Heap class</b> from scratch, especially during an interview. After reviewing the <i>Java / Python / C++</i> solutions on <i>Leetcode</i> the most effecient way to solve a <b>Top 'K' Elements</b> problem is usually with <b>[QuickSort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort)</b>, <b>[BinarySearch](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#binary-search)</b>, <b>[BucketSort](https://en.wikipedia.org/wiki/Bucket_sort)</b>, <b>[Greedy Algorithms](https://github.com/Chanda-Abdul/Grokking-Algorithm-Book-Notes/blob/main/8.%20Greedy%20Algoritms.md)</b>, or <b>[HashMaps](https://developer.mozilla.org/en-US/docs/Web/Java / Python / C++/Reference/Global_Objects/Map)</b>. For more information take a look at these
 
-- [js heap implementation](https://dandkim.com/js-heap-implementation/)
-- [implementing heaps in javascript](https://blog.bitsrc.io/implementing-heaps-in-javascript-c3fbf1cb2e65)
-- [heap data structure in javascript](https://learnersbucket.com/tutorials/array/heap-data-structure-in-javascript/)
+- [heap implementation](https://en.wikipedia.org/wiki/Heap_(data_structure))
+- [implementing heaps in Java / Python / C++](https://blog.bitsrc.io/implementing-heaps-in-Java / Python / C++-c3fbf1cb2e65)
+- [heap data structure in Java / Python / C++](https://learnersbucket.com/tutorials/array/heap-data-structure-in-Java / Python / C++/)
 
 ## Top 'K' Numbers (easy)
 
@@ -2629,7 +2629,7 @@ https://leetcode.com/problems/maximum-frequency-stack/
 
 ### Frequency Map & Stack Solution
 
-❗ Explaination referenced [here](https://leetcode.com/problems/maximum-frequency-stack/discuss/1086543/JS-Python-Java-C%2B%2B-or-Frequency-Map-and-Stack-Solution-w-Explanation)
+❗ Explaination referenced [here](https://leetcode.com/problems/maximum-frequency-stack/discuss/1086543/Multi-Language-or-Frequency-Map-and-Stack-Solution-w-Explanation)
 
 There are many ways to solve this problem, but the description gives us two clues as to the most efficient way to do so.
 
@@ -2644,7 +2644,7 @@ Our frequency map `freqMap()` will be used to keep track of the current frequenc
 
 ### Implementation:
 
-Since our frequencies are <b>1-indexed</b> and the <b>stack</b> is <b>0-indexed</b>, we have to insert a dummy <b>0-index</b> for all languages except <i>Javascript</i>, which lets you directly access even undefined array elements by index.
+Since our frequencies are <b>1-indexed</b> and the <b>stack</b> is <b>0-indexed</b>, we have to insert a dummy <b>0-index</b> using built-in collections across languages which let you directly access even undefined array elements by index.
 
 ### Java
 ```java

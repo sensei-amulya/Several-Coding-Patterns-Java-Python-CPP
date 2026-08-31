@@ -1057,7 +1057,7 @@ So our algorithm will look like this:
 ### Java
 ```java
 public static Object minMeetingRooms(meetings) {
-  //JavaScript does not come with built in Heap, so I used an array to keep track of rooms and sorted by end time at each call
+  //Java provides java.util.PriorityQueue, Python provides heapq, and C++ provides std::priority_queue, so I used an array to keep track of rooms and sorted by end time at each call
   if(meetings == null) return 0
   if(meetings.length <= 1) return meetings.length
   
@@ -1099,7 +1099,7 @@ minMeetingRooms([[4,5], [2,3], [2,4], [3,5]])//2, We will need one room for [2,3
 ### Python
 ```python
 def minMeetingRooms(meetings):
-    #JavaScript does not come with built in Heap, so I used an array to keep track of rooms and sorted by end time at each call
+    #Java provides java.util.PriorityQueue, Python provides heapq, and C++ provides std::priority_queue, so I used an array to keep track of rooms and sorted by end time at each call
     if meetings == None:return 0
     if len(meetings) <= 1:return len(meetings)
 
@@ -1137,7 +1137,7 @@ def minMeetingRooms(meetings):
 ### C++
 ```cpp
 auto minMeetingRooms(meetings) {
-  //JavaScript does not come with built in Heap, so I used an array to keep track of rooms and sorted by end time at each call
+  //Java provides java.util.PriorityQueue, Python provides heapq, and C++ provides std::priority_queue, so I used an array to keep track of rooms and sorted by end time at each call
   if(meetings == nullptr) return 0
   if(meetings.size() <= 1) return meetings.size()
   

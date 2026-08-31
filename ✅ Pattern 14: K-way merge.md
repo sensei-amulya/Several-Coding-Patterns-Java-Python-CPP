@@ -4,7 +4,7 @@ This pattern helps us solve problems that involve a list of sorted arrays.
 
 Whenever we are given `K` sorted arrays, we can use a <b>Heap</b> to efficiently perform a sorted traversal of all the elements of all arrays. We can push the smallest (first) element of each sorted array in a <b>Min Heap</b> to get the overall minimum. While inserting elements to the <b>Min Heap</b> we keep track of which array the element came from. We can, then, remove the top element from the <b>heap</b> to get the smallest element and push the next element from the same array, to which this smallest element belonged, to the <b>heap</b>. We can repeat this process to make a sorted traversal of all elements.
 
-Although this course uses <b>Heaps</b> to solve <b>Top 'K' Elements</b> problems, <b>JavaScript</b> does not have a built in method for <b>Heaps/Priority Queues</b>. It can be very time consuming to implement a <b>Heap class</b> from scratch, especially during an interview. After reviewing the <i>JavaScript</i> solutions on <i>Leetcode</i> the most effecient way to solve a <b>Top 'K' Elements</b> problem is usually with <b>[QuickSort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort)</b>, <b>[BinarySearch](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#binary-search)</b>, <b>[BucketSort](https://initjs.org/bucket-sort-in-javascript-dc040b8f0058)</b>, <b>[Greedy Algorithms](https://github.com/Chanda-Abdul/Grokking-Algorithm-Book-Notes/blob/main/8.%20Greedy%20Algoritms.md)</b>, or <b>[HashMaps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)</b>. 
+Although this course uses <b>Heaps</b> to solve <b>Top 'K' Elements</b> problems, <b>Java / Python / C++</b> does not have a built in method for <b>Heaps/Priority Queues</b>. It can be very time consuming to implement a <b>Heap class</b> from scratch, especially during an interview. After reviewing the <i>Java / Python / C++</i> solutions on <i>Leetcode</i> the most effecient way to solve a <b>Top 'K' Elements</b> problem is usually with <b>[QuickSort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort)</b>, <b>[BinarySearch](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#binary-search)</b>, <b>[BucketSort](https://en.wikipedia.org/wiki/Bucket_sort)</b>, <b>[Greedy Algorithms](https://github.com/Chanda-Abdul/Grokking-Algorithm-Book-Notes/blob/main/8.%20Greedy%20Algoritms.md)</b>, or <b>[HashMaps](https://developer.mozilla.org/en-US/docs/Web/Java / Python / C++/Reference/Global_Objects/Map)</b>. 
 
 ## 👩🏽‍🦯 🌴 😐📖 Merge K Sorted Lists (medium)
 
@@ -1787,7 +1787,7 @@ Here is what this algorithm will look like:
 
 ### Java
 ```java
-Heap = require("./collections/heap"); //http://www.collectionsjs.com
+Heap = require("./collections/heap"); //https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html
 
 public static Object findKthSmallestNumber(nums, k) {
   maxHeap = new Heap();
@@ -1825,7 +1825,7 @@ System.out.println(
 
 ### Python
 ```python
-Heap = require("./collections/heap"); #http://www.collectionsjs.com
+Heap = require("./collections/heap"); #https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html
 
 def findKthSmallestNumber(nums, k):
     maxHeap = new Heap()
@@ -1859,7 +1859,7 @@ print(
 
 ### C++
 ```cpp
-auto Heap = require("./collections/heap"); //http://www.collectionsjs.com
+auto Heap = require("./collections/heap"); //https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html
 
 auto findKthSmallestNumber(nums, k) {
   maxHeap = new Heap();
@@ -2247,7 +2247,7 @@ std::cout <<
 
 ### 7. Using the [Median of Medians algorithm](https://en.wikipedia.org/wiki/Median_of_medians)
 
-We can use the <b>[Median of Medians algorithm](https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-88.php)</b> to choose a good <b>pivot</b> for the <i>partitioning</i> algorithm of the [Quicksort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort). This algorithm finds an approximate median of an array in linear time `O(N)`. When this approximate median is used as the <b>pivot</b>, the worst-case complexity of the <i>partitioning</i> procedure reduces to linear `O(N)`, which is also the asymptotically optimal worst-case complexity of any sorting/selection algorithm. This algorithm was originally developed by <i>Blum, Floyd, Pratt, Rivest, and Tarjan</i> and was describe in their [1973 paper](http://people.csail.mit.edu/rivest/pubs/BFPRT73.pdf).
+We can use the <b>[Median of Medians algorithm](https://www.w3resource.com/Java / Python / C++-exercises/fundamental/Java / Python / C++-fundamental-exercise-88.php)</b> to choose a good <b>pivot</b> for the <i>partitioning</i> algorithm of the [Quicksort](https://github.com/Chanda-Abdul/leetcode/blob/master/0%20%E2%9D%97Sort%20Algorithms.md#-quick-sort). This algorithm finds an approximate median of an array in linear time `O(N)`. When this approximate median is used as the <b>pivot</b>, the worst-case complexity of the <i>partitioning</i> procedure reduces to linear `O(N)`, which is also the asymptotically optimal worst-case complexity of any sorting/selection algorithm. This algorithm was originally developed by <i>Blum, Floyd, Pratt, Rivest, and Tarjan</i> and was describe in their [1973 paper](http://people.csail.mit.edu/rivest/pubs/BFPRT73.pdf).
 
 This is how the <i>partitioning</i> algorithm works:
 
